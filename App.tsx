@@ -7,6 +7,8 @@ import WelcomeScreen from './WelcomeScreen';
 import LoginScreen from './Login'; 
 import DashboardScreen from './Dashboard';
 import StudentProfileScreen from './StudentProfile';
+import WeeklyProgressScreen from './WeeklyProgress';
+import ProgressHistoryScreen from './ProgressHistory'; // New Import
 
 const Stack = createStackNavigator();
 
@@ -18,6 +20,8 @@ export default function App() {
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Dashboard" component={DashboardScreen} />
         <Stack.Screen name="StudentProfile" component={StudentProfileScreen} />
+        <Stack.Screen name="WeeklyProgress" component={WeeklyProgressScreen} />
+        <Stack.Screen name="ProgressHistory" component={ProgressHistoryScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
